@@ -13,4 +13,3 @@ var waypoint = new Waypoint({
   }
 });
 });
-
