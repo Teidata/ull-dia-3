@@ -5,9 +5,9 @@ var waypoint = new Waypoint({
   element: document.getElementById('tres'),
   // Función disparada
   handler: function(direction) {
-    console.log('¡Has pasado por aquí!');
+    alert('¡Has pasado por aquí!');
     if (direction == 'down') {
-      console.log('¡Hacia abajo!');
+      alert('¡Hacia abajo!');
       this.destroy();                     // Sólo lo detectará una vez
     }
   }
