@@ -16,4 +16,4 @@ $(document).ready(function() {
     tags = document.getElementById('input-tags');
     console.log(tags.value.split(','));
   }
-});
+}
