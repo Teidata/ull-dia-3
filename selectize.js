@@ -2,16 +2,19 @@
 
 $(document).ready(function() {
   $('#input-tags').selectize({
-      plugins: ['remove_button', 
+      plugins: [
+              'remove_button', 
               'drag_drop',
-              'optgroup_columns'],  
+              'optgroup_columns'
+               ],  
       delimiter: ',',
       persist: false,
       create: function(input) {
         return { 
           value: input,
-          text: input 
+          text: input        
         }
+        
       }
   });
   // return ['tag1', 'tag2', …]
