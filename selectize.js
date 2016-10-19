@@ -1,6 +1,7 @@
 
 
 $(document).ready(function() {
+  
   $('#input-tags').selectize({
       delimiter: ',',
       persist: false,
@@ -23,5 +24,6 @@ $(document).ready(function() {
     tags = document.getElementById('input-tags');
     console.log(tags.value.split(','));
   }
-  });
+
+
 });
