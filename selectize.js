@@ -2,13 +2,13 @@
 
 $(document).ready(function() {
   $('#input-tags').selectize({
+      delimiter: ',',
+      persist: false,
       plugins: [
               'remove_button', 
               'drag_drop',
               'optgroup_columns'
                ],  
-      delimiter: ',',
-      persist: false,
       create: function(input) {
         return { 
           value: input,
@@ -16,6 +16,7 @@ $(document).ready(function() {
         }
         
       }
+    
   });
   // return ['tag1', 'tag2', …]
   function viewTags() {
